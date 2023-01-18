@@ -2,6 +2,10 @@
   font-family: 'Montserrat';
 }
 
+.app {
+  background-color: #303436;
+}
+
 .stage {
   display: flex;
   justify-content: center;
@@ -10,4 +14,42 @@
   padding: 32px 0;
   margin: 0 -5%;
   overflow: hidden;
+}
+
+h1, h2 {
+  font-family: 'Lemonada', cursive;
+}
+
+h1 {
+  margin-left: 25vw;
+}
+
+h2 {
+  text-decoration: underline;
+  margin-left: 1rem
+}
+
+h2, h4 {
+  color: #fff;
+}
+
+.img-header {
+  margin-right: 25vw;
+}
+
+
+.btn {
+  margin: .5rem
+}
+
+.btn-p {
+  margin: .5rem 2rem;
+}
+
+.filter, .blog-posts {
+  margin: 2rem;
+}
+
+.card-text, .card-title {
+  margin: 1rem
 }
