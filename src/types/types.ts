@@ -1,6 +1,7 @@
 export interface BlogData {
   filter: any,
-  id: number
+  id: number,
+  userId: number,
   title: string,
   body: string,
   reactions: number,

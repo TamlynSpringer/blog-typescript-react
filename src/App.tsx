@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/styles/dots.css';
 import { BlogData } from './types/types';
@@ -20,19 +20,17 @@ const App: React.FC = () => {
       getBlogData();
     }, []);
 
-  console.log(blogs, 'blog data from use state, outside fetch');
-
-  const filterByTag = (tag: string) => {
+  const filterByTag = useCallback((tag: string) => {
     if (tag === 'all') {
       setFilter(blogs)
     } else {
       setFilter(blogs.filter((blog) => blog.tags.includes(tag)));
     }
-  };
+  }, [blogs]);
 
   useEffect(() => {
     filterByTag(tag)
-  }, [tag])
+  }, [tag, filterByTag])
 
 
   return (
