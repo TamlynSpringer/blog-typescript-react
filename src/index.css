@@ -53,3 +53,22 @@ h2, h4 {
 .card-text, .card-title {
   margin: 1rem
 }
+
+.scrollToTop {
+	background: gray;
+	color: black;
+	position: fixed;
+	width: 100%;
+	align-items: center;
+	height: 20px;
+	justify-content: center;
+	z-index: 999;
+	cursor: pointer;
+	animation: fadeIn 0.3s;
+	transition: opacity 0.4s;
+	opacity: 1;
+}
+
+.scrollToTop:hover {
+	opacity: 1;
+}

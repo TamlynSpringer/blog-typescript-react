@@ -4,6 +4,7 @@ import './assets/styles/dots.css';
 import { BlogData } from './types/types';
 import BlogList from './components/BlogList';
 import Header from './components/Header';
+import UseScrollToTop from './hooks/useScrollToTop';
 
 const App: React.FC = () => {
   const [blogs, setBlogs] = useState<BlogData[]>([{} as BlogData]);
@@ -46,6 +47,7 @@ const App: React.FC = () => {
         <button type='submit' className='btn btn-dark' onClick={() => setTag('fiction')}>Fiction</button>
       </div>
       <BlogList blogs={filter} tag={tag} />
+      <UseScrollToTop />
     </main>
   )
 };
