@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './assets/styles/dots.css';
 import { BlogData } from './types/types';
 import BlogList from './components/BlogList';
 import Header from './components/Header';
